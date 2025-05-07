@@ -1,0 +1,43 @@
+{
+  "name": "silo-backend",
+  "version": "1.0.0",
+  "description": "Este é o backend do projeto Silo.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsx src/index.ts",
+    "db:push": "npx drizzle-kit push",
+    "db:generate": "npx drizzle-kit generate",
+    "db:migrate": "npx drizzle-kit migrate",
+    "db:studio": "npx drizzle-kit studio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sessojunior/silo-backend.git"
+  },
+  "keywords": [],
+  "author": "Mario Sesso Junior <sessojunior@gmail.com> (https://www.sessojunior.com.br/)",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sessojunior/silo-backend/issues"
+  },
+  "homepage": "https://github.com/sessojunior/silo-backend#readme",
+  "dependencies": {
+    "@libsql/client": "^0.15.4",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.43.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.15.14",
+    "drizzle-kit": "^0.31.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
